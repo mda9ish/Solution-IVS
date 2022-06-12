@@ -1,0 +1,112 @@
+body{
+    padding: 0;
+    margin: 0;
+   
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-color: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.main .video{
+    height: 300px;
+    width: 500;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.main .video .play{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 44px;
+    cursor: pointer;
+}
+.main .video video{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    z-index: -1;
+}
+.main .video .video_controls{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    display: flex;
+    align-items: center ;
+    padding: 20px 0;
+
+
+}
+
+.main .video .video_controls .play2{
+    margin-left: 2%;
+    cursor: pointer;
+    font-size: 24px;
+
+}
+
+.main .video .video_controls .seekbar{
+    position: absolute;
+    height: auto;
+    width: 100%;
+    bottom: 60px;
+    left: -0.5%;
+}
+
+.main .video .video_controls .seekbar input[type="range"]{
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    cursor: pointer;
+    -webkit-appearance: none !important;
+}
+
+.main .video .video_controls .seekbar input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: rgb(124, 207, 233);
+    transition: 0.5s ease-in-out forwards;
+    cursor: pointer;
+    opacity: 0;
+
+}
+.main .video .video_controls .seekbar input[type="range"]:hover::-webkit-slider-thumb {
+    opacity: 1;
+}
+
+#video-wrapper:before{
+    content: " ";
+    border: #000 solid 1px;
+    width: 50px;
+    height: 50px;
+    background:url(./danish_design_logo.jpg);
+    background-size: cover;
+    left: 90px;
+    top: 75px;
+    position: absolute;
+    
+}
+

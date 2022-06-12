@@ -1,0 +1,14 @@
+{
+    "scripts": {
+        "test": "jest --env=jsdom"
+    },
+    "dependencies": {
+        "fs": "0.0.1-security",
+        "jest": "^28.1.1",
+        "jsdom": "^19.0.0",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {
+        "jest-environment-jsdom": "^28.1.1"
+    }
+}

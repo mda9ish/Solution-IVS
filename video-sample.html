@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="https://use.fontawesome.com/31263fc466.js"></script>
+    <!-- <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"> -->
+        
+</head>
+
+<body>
+    <div class="main">
+        <div class="video" id="video">   
+            <video id="videomain" src="sample_video (720p).mp4"></video>
+            <div class="play" id="play1"> <i class="fa fa-play" aria-hidden="true"></i> </div>
+            <div class="video_controls">
+                <div class="play2"  id="play2">
+                    <i class="fa fa-play"></i>
+                </div>
+                <div class="seekbar">
+                    <input type="range" id="seek" name="seek" value="0" max="100" min="0">
+                    <div class="red" id="red" style="position: absolute; background:rgb(124, 207, 233); height:5px; width: 0%; left: 0.5%;"></div>
+                    <div id="dot" style="position: absolute; background: #f00; height:5px; width: 5px; display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="video-sample.js"></script>
+</body>
+
+</html>
